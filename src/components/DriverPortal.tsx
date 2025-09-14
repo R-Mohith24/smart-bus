@@ -11,57 +11,42 @@ export const DriverPortal = () => {
       </div>
       
       <form className="space-y-5">
-        <div className="relative">
-          <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-          <SmartInput
-            type="tel"
-            placeholder="Enter your phone number"
-            className="pl-11"
-            label="Phone Number"
-          />
-        </div>
+        <SmartInput
+          type="tel"
+          placeholder="Enter your phone number"
+          label="Phone Number"
+          icon={Phone}
+        />
         
-        <div className="relative">
-          <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-          <SmartInput
-            type="password"
-            placeholder="Enter your password"
-            className="pl-11"
-            label="Password"
-          />
-        </div>
+        <SmartInput
+          type="password"
+          placeholder="Enter your password"
+          label="Password"
+          icon={Lock}
+        />
         
-        <div className="relative">
-          <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-          <SmartInput
-            type="text"
-            placeholder="Enter your full name"
-            className="pl-11"
-            label="Full Name"
-          />
-        </div>
+        <SmartInput
+          type="text"
+          placeholder="Enter your full name"
+          label="Full Name"
+          icon={User}
+        />
         
-        <div className="relative">
-          <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-          <SmartInput
-            type="number"
-            placeholder="Enter your age"
-            className="pl-11"
-            label="Age"
-            min="18"
-            max="65"
-          />
-        </div>
+        <SmartInput
+          type="number"
+          placeholder="Enter your age"
+          label="Age"
+          min="18"
+          max="65"
+          icon={Calendar}
+        />
         
-        <div className="relative">
-          <CreditCard className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-          <SmartInput
-            type="text"
-            placeholder="Enter your license ID"
-            className="pl-11"
-            label="Driving License ID"
-          />
-        </div>
+        <SmartInput
+          type="text"
+          placeholder="Enter your license ID"
+          label="Driving License ID"
+          icon={CreditCard}
+        />
         
         <SmartButton variant="driver" className="w-full mt-8">
           Login as Driver

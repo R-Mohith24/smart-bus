@@ -11,25 +11,19 @@ export const PassengerPortal = () => {
       </div>
       
       <form className="space-y-5">
-        <div className="relative">
-          <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-          <SmartInput
-            type="email"
-            placeholder="Enter your email"
-            className="pl-11"
-            label="Email Address"
-          />
-        </div>
+        <SmartInput
+          type="email"
+          placeholder="Enter your email"
+          label="Email Address"
+          icon={Mail}
+        />
         
-        <div className="relative">
-          <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-          <SmartInput
-            type="password"
-            placeholder="Enter your password"
-            className="pl-11"
-            label="Password"
-          />
-        </div>
+        <SmartInput
+          type="password"
+          placeholder="Enter your password"
+          label="Password"
+          icon={Lock}
+        />
         
         <SmartButton variant="passenger" className="w-full mt-8">
           Login as Passenger
