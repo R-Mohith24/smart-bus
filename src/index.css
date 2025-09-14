@@ -8,35 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    /* Smart Bus App Color Palette */
+    --light-aqua: 186 100% 94%;        /* #E0F8FA */
+    --soft-teal: 186 54% 81%;          /* #B2EBF2 */
+    --medium-cyan: 186 65% 70%;        /* #80DEEA */
+    --bright-teal: 187 70% 59%;        /* #4DD0E1 */
+    --deep-cyan: 188 81% 52%;          /* #26C6DA */
+    
+    /* Background and surfaces */
+    --background: var(--light-aqua);
+    --foreground: 200 15% 20%;
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 200 15% 20%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --popover-foreground: 200 15% 20%;
+    
+    /* Brand colors */
+    --primary: var(--deep-cyan);
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: var(--bright-teal);
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: var(--medium-cyan);
+    --accent-foreground: 0 0% 100%;
+    
+    --muted: var(--soft-teal);
+    --muted-foreground: 200 15% 40%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Input styling */
+    --border: var(--soft-teal);
+    --input: 0 0% 100%;
+    --input-border: var(--soft-teal);
+    --ring: var(--bright-teal);
+    
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-bg: linear-gradient(180deg, hsl(var(--light-aqua)), hsl(var(--soft-teal)));
+    --gradient-card: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 12px rgba(38, 198, 218, 0.15);
+    --shadow-button: 0 2px 8px rgba(38, 198, 218, 0.25);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 
